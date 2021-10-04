@@ -1,9 +1,9 @@
 {
-	"name": "crypto-random-string",
-	"version": "4.0.0",
+	"name": "@b58-finance/crypto-random-string",
+	"version": "14.0.0",
 	"description": "Generate a cryptographically strong random string",
 	"license": "MIT",
-	"repository": "sindresorhus/crypto-random-string",
+	"repository": "git@github.com:B58-Finance/crypto-random-string.git",
 	"funding": "https://github.com/sponsors/sindresorhus",
 	"author": {
 		"name": "Sindre Sorhus",
@@ -16,7 +16,7 @@
 		"node": ">=12"
 	},
 	"scripts": {
-		"test": "xo && ava && tsd"
+		"test": "xo --ignore libs && ava && tsd"
 	},
 	"files": [
 		"index.js",
@@ -39,6 +39,8 @@
 		"protect"
 	],
 	"dependencies": {
+		"es6-promisify": "^7.0.0",
+		"randombytes": "^2.1.0",
 		"type-fest": "^1.0.1"
 	},
 	"devDependencies": {
